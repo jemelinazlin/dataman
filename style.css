@@ -8,3 +8,30 @@ h2{
     padding: 20px;
     font-style: italic;
 }
+
+div{
+    color: goldenrod;
+    font-style: initial;
+    text-shadow: 0cqh;
+    text-decoration-color: grey;
+    text-decoration: double;
+    text-indent: 0mm;
+}
+
+.highlight{
+    color: violet;
+}
+
+.toplinks a{
+    color: white;
+    background-color: black;
+    padding: 14px 16px;
+    font-size: 17px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    float: left;
+    font-size: 24px;
+    
+
+}
