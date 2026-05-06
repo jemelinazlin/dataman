@@ -2,27 +2,117 @@
 <html>
 <head>
     <title>Courses</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        h1 {
+            color: brown;
+            font-size: 20px;
+            font-style: italic;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: aqua;
+        }
+
+        hr {
+            margin: 20px;
+        }
+
+        /* Course list */
+        ul {
+            width: 60%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            list-style-position: inside;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        /* Course cards */
+        .course {
+            background-color: white;
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .course img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+
 </head>
+
 <body>
 
     <!-- Navigation -->
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="services.html">Courses</a> |
-        <a href="shop.html">Resources</a> |
-        <a href="blog.html">Blog</a> |
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Courses</a>
+        <a href="shop.html">Resources</a>
+        <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
     </nav>
-
-    <hr>
 
     <h1>Programming Courses</h1>
 
     <p>
-       Explore beginner-friendly programming courses designed
-       to help you build coding skills.
+        Explore beginner-friendly programming courses designed
+        to help you build coding skills.
     </p>
+
+    <hr>
 
     <h2>Available Courses</h2>
 
@@ -36,32 +126,28 @@
 
     <h2>Course Highlights</h2>
 
-    <img src=""
-         width="180"
-         alt="Java Logo">
+    <!-- Course Cards -->
 
-    <p>Learn Java for software development and object-oriented programming.</p>
+    <div class="course">
+        <img src="java.png" alt="Java Logo">
+        <p>Learn Java for software development and object-oriented programming.</p>
+    </div>
 
-    <br>
+    <div class="course">
+        <img src="python.png" alt="Python Logo">
+        <p>Study Python for scripting, automation and data science.</p>
+    </div>
 
-    <img src=""
-         width="180"
-         alt="Python Logo">
-
-    <p>Study Python for scripting, automation and data science.</p>
-
-    <br>
-
-    <img src=""
-         width="180"
-         alt="C++ Logo">
-
-    <p>Master C++ for systems programming and algorithms.</p>
+    <div class="course">
+        <img src="cpp.png" alt="C++ Logo">
+        <p>Master C++ for systems programming and algorithms.</p>
+    </div>
 
     <hr>
 
+    <!-- Footer -->
     <footer>
-       <p>© 2026 Programming Hub Courses</p>
+        <p>© 2026 Programming Hub Courses</p>
     </footer>
 
 </body>

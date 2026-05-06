@@ -2,66 +2,195 @@
 <html>
 <head>
     <title>Programming Hub</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        h1 {
+            color: brown;
+            font-size: 20px;
+            font-style: italic;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: aqua;
+        }
+
+        hr {
+            margin: 20px;
+        }
+
+        /* Banner */
+        .banner {
+            height: 150px;
+            background: linear-gradient(to right, brown, black);
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        /* Layout */
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: white;
+            padding: 20px;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .sidebar {
+            background-color: white;
+            padding: 20px;
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .sidebar img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Programming cards */
+        .card {
+            background-color: white;
+            margin: 20px auto;
+            width: 70%;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        /* Highlight */
+        .highlight {
+            color: aqua;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+
 </head>
+
 <body>
 
-    <h1 style="color: brown; font-size: 16px; font-style: italic;">Welcome to Programming Hub</h1>
-    <p style="text-decoration: wavy;">Learn Java and explore popular programming languages in one place.</p>
+    <!-- Header -->
+    <h1>Welcome to Programming Hub</h1>
+
+    <p>
+        Learn Java and explore popular programming languages in one place.
+    </p>
 
     <hr>
-    <nav class="toplinks">
-        <a href="index.html">Home</a> 
-        <a href="about.html">About</a> 
-        <a href="services.html">Courses</a> 
-        <a href="shop.html">Shop</a> 
-        <a href="blog.html">Blog</a> 
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Courses</a>
+        <a href="shop.html">Shop</a>
+        <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <br>
 
     <hr>
-    <Link rel="stylesheet" href="style.css">
+
+    <!-- Banner -->
+    <div class="banner"></div>
+
     <h2>Learn Java Programming</h2>
 
-    <p style="color: aqua;">
-       Java is one of the most powerful and widely used programming languages.
-       It is used in web development, mobile apps, desktop software,
-       and enterprise systems.
-    </p>
+    <div class="row">
+
+        <div class="content">
+
+            <p class="highlight">
+                Java is one of the most powerful and widely used programming languages.
+                It is used in web development, mobile apps, desktop software,
+                and enterprise systems.
+            </p>
+
+        </div>
+
+        <div class="sidebar">
+            <img src="coding.jpg" alt="Programming Image">
+        </div>
+
+    </div>
 
     <h2>Programming Languages</h2>
-    <Link rel="stylesheet" href="style.css">
-    <div>
-    <img src=""
-         width="180"
-         alt="Java Logo">
-    <p>
-       Java is object-oriented, secure, portable and beginner friendly.
-    </p>
 
-    <br>
-
-    <img src=""
-         width="180"
-         alt="Python Logo">
-    <p>
-       Python is popular for data science, automation and web development.
-    </p>
-
-    <br>
-
-    <img src=""
-         width="180"
-         alt="C++ Logo">
-    <p>
-       C++ is powerful for systems programming and high-performance software.
-    </p>
+    <!-- Language Cards -->
+    <div class="card">
+        <img src="java.png" alt="Java Logo">
+        <p>Java is object-oriented, secure, portable and beginner friendly.</p>
     </div>
+
+    <div class="card">
+        <img src="python.png" alt="Python Logo">
+        <p>Python is popular for data science, automation and web development.</p>
+    </div>
+
+    <div class="card">
+        <img src="cpp.png" alt="C++ Logo">
+        <p>C++ is powerful for systems programming and high-performance software.</p>
+    </div>
+
     <hr>
 
     <h2>Topics You Can Learn</h2>
-    <link rel="stylesheet" href="style.css">
-    <ul>
+
+    <ul style="text-align:center; list-style-position: inside;">
         <li>Java Basics</li>
         <li>Object-Oriented Programming</li>
         <li>Data Structures</li>
@@ -74,14 +203,15 @@
     <h2>Why Learn Programming?</h2>
 
     <p class="highlight">
-       Programming helps solve problems, build applications,
-       automate tasks, and create technology that impacts the world.
+        Programming helps solve problems, build applications,
+        automate tasks, and create technology that impacts the world.
     </p>
 
     <hr>
 
-    <footer>
-        <p>&copy; 2026 Programming Hub | Learn. Code. Create.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Programming Hub | Learn. Code. Create.</p>
     </footer>
 
 </body>

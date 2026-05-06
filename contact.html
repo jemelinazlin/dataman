@@ -2,20 +2,116 @@
 <html>
 <head>
     <title>Contact Us</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header style */
+        h1 {
+            color: brown;
+            font-size: 20px;
+            font-style: italic;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: aqua;
+        }
+
+        hr {
+            margin: 20px;
+        }
+
+        /* Form styling */
+        form {
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: brown;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: darkred;
+        }
+
+        /* Contact info */
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+
 </head>
 <body>
 
     <!-- Navigation -->
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="services.html">Courses</a> |
-        <a href="shop.html">Shop</a> |
-        <a href="blog.html">Blog</a> |
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Courses</a>
+        <a href="shop.html">Shop</a>
+        <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
     </nav>
-
-    <hr>
 
     <h1>Contact Programming Hub</h1>
 
@@ -24,40 +120,38 @@
         Send us a message below.
     </p>
 
+    <hr>
+
+    <!-- Form -->
     <form>
 
-        <label>Name:</label><br>
+        <label>Name:</label>
         <input type="text" name="name">
-        <br><br>
 
-        <label>Email:</label><br>
+        <label>Email:</label>
         <input type="email" name="email">
-        <br><br>
 
-        <label>Programming Topic:</label><br>
+        <label>Programming Topic:</label>
         <input type="text" name="topic">
-        <br><br>
 
-        <label>Your Message:</label><br>
-        <textarea rows="5" cols="35"></textarea>
-        <br><br>
+        <label>Your Message:</label>
+        <textarea rows="5"></textarea>
 
         <button type="submit">Send Message</button>
 
     </form>
 
-    <hr>
+    <!-- Contact Info -->
+    <div class="contact-info">
+        <h2>Other Ways to Reach Us</h2>
+        <p>Email: support@programminghub.com</p>
+        <p>Phone: +254 700 123 456</p>
+    </div>
 
-    <h2>Other Ways to Reach Us</h2>
-
-    <p>Email: support@programminghub.com</p>
-    <p>Phone: +254 700 123 456</p>
-
-    <!-- Optional image -->
+    <!-- Image -->
     <img src="contact-coding.jpg" width="350" alt="Coding Support">
 
-    <hr>
-
+    <!-- Footer -->
     <footer>
         <p>© 2026 Programming Hub</p>
     </footer>

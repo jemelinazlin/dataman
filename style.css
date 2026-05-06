@@ -32,6 +32,18 @@ div{
     display: block;
     float: left;
     font-size: 24px;
-    
 
+}  
+.content{
+    float: left;
+    width: 10px;
+}
+@media screen and(max-width: 900px){
+.footer{
+    font-size: small;
+    color: cadetblue;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
 }

@@ -2,20 +2,109 @@
 <html>
 <head>
     <title>Programming Resources</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        h1 {
+            color: brown;
+            font-size: 20px;
+            font-style: italic;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: aqua;
+        }
+
+        hr {
+            margin: 20px;
+        }
+
+        /* Resource cards */
+        .resource {
+            background-color: white;
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .resource img {
+            width: 180px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* List */
+        ul {
+            width: 60%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            list-style-position: inside;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+
 </head>
+
 <body>
 
     <!-- Navigation -->
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="services.html">Courses</a> |
-        <a href="shop.html">Resources</a> |
-        <a href="blog.html">Blog</a> |
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Courses</a>
+        <a href="shop.html">Resources</a>
+        <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
     </nav>
-
-    <hr>
 
     <h1>Programming Resources</h1>
 
@@ -28,24 +117,22 @@
 
     <h2>Featured Resources</h2>
 
-    <img src="java-book.jpg" width="200" alt="Java Book">
-    <p>
-       Java Programming Guide for beginners.
-    </p>
+    <!-- Resources -->
 
-    <br>
+    <div class="resource">
+        <img src="java-book.jpg" alt="Java Book">
+        <p>Java Programming Guide for beginners.</p>
+    </div>
 
-    <img src="vscode.jpg" width="200" alt="VS Code">
-    <p>
-       Visual Studio Code — a popular coding editor.
-    </p>
+    <div class="resource">
+        <img src="vscode.jpg" alt="VS Code">
+        <p>Visual Studio Code — a popular coding editor.</p>
+    </div>
 
-    <br>
-
-    <img src="datastructures.jpg" width="200" alt="Data Structures">
-    <p>
-       Learn Data Structures and Algorithms.
-    </p>
+    <div class="resource">
+        <img src="datastructures.jpg" alt="Data Structures">
+        <p>Learn Data Structures and Algorithms.</p>
+    </div>
 
     <hr>
 
@@ -60,6 +147,7 @@
 
     <hr>
 
+    <!-- Footer -->
     <footer>
         <p>© 2026 Programming Hub Resources</p>
     </footer>

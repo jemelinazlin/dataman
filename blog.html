@@ -2,26 +2,117 @@
 <html>
 <head>
     <title>Programming Blog</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        h1 {
+            color: brown;
+            font-size: 20px;
+            font-style: italic;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: aqua;
+        }
+
+        hr {
+            margin: 20px;
+        }
+
+        /* Blog cards */
+        article {
+            background-color: white;
+            width: 70%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        article h2 {
+            color: #333;
+        }
+
+        article p {
+            text-align: left;
+            color: #444;
+        }
+
+        ul {
+            text-align: left;
+            list-style-position: inside;
+        }
+
+        /* Image */
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 400px;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+
 </head>
+
 <body>
 
     <!-- Navigation -->
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="services.html">Courses</a> |
-        <a href="shop.html">Shop</a> |
-        <a href="blog.html">Blog</a> |
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Courses</a>
+        <a href="shop.html">Shop</a>
+        <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
     </nav>
 
-    <hr>
-
     <h1>Programming Blog</h1>
+
     <p>Tips, tutorials and coding updates.</p>
 
     <hr>
 
+    <!-- Blog Posts -->
     <article>
         <h2>Why Learn Java?</h2>
         <p>
@@ -31,8 +122,6 @@
         </p>
     </article>
 
-    <hr>
-
     <article>
         <h2>Getting Started with OOP</h2>
         <p>
@@ -41,8 +130,6 @@
             to organize code efficiently.
         </p>
     </article>
-
-    <hr>
 
     <article>
         <h2>Top Languages to Learn in 2026</h2>
@@ -54,13 +141,10 @@
         </ul>
     </article>
 
-    <hr>
+    <!-- Image -->
+    <img src="coding-blog.jpg" alt="Programming Blog">
 
-    <!-- Optional blog image -->
-    <img src="coding-blog.jpg" width="400" alt="Programming Blog">
-
-    <hr>
-
+    <!-- Footer -->
     <footer>
         <p>© 2026 Programming Hub Blog</p>
     </footer>

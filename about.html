@@ -2,56 +2,181 @@
 <html>
 <head>
     <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        h1 {
+            color: brown;
+            font-size: 20px;
+            font-style: italic;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: aqua;
+        }
+
+        hr {
+            margin: 20px;
+        }
+
+        /* Layout */
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: white;
+            padding: 20px;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .sidebar {
+            background-color: white;
+            padding: 20px;
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .sidebar img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Banner */
+        .banner {
+            height: 150px;
+            background: linear-gradient(to right, brown, black);
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        /* Highlight text */
+        .highlight {
+            color: aqua;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <!-- Navigation at top -->
+    <!-- Header -->
+    <h1>About Programming Hub</h1>
+
+    <p>
+        Learn Java and explore programming in one simple platform.
+    </p>
+
+    <hr>
+
+    <!-- Navigation -->
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="services.html">Courses</a> |
-        <a href="shop.html">Shop</a> |
-        <a href="blog.html">Blog</a> |
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Courses</a>
+        <a href="shop.html">Shop</a>
+        <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
     </nav>
 
     <hr>
 
-    <h1>About Programming Hub</h1>
+    <!-- Banner -->
+    <div class="banner"></div>
 
-    <p>
-        Welcome to Programming Hub, a simple website created for learning
-        Java and other programming languages.
-    </p>
+    <!-- Content layout -->
+    <div class="row">
 
-    <p>
-        Our goal is to help beginners understand coding concepts in an easy
-        and practical way through tutorials, examples, and programming resources.
-    </p>
+        <div class="content">
 
-    <h2>What We Focus On</h2>
+            <h2>About Programming Hub</h2>
 
-    <ul>
-        <li>Java Programming Fundamentals</li>
-        <li>Object-Oriented Programming</li>
-        <li>Learning Python and C++</li>
-        <li>Programming Practice Projects</li>
-    </ul>
+            <p class="highlight">
+                Welcome to Programming Hub, a simple website created for learning
+                Java and other programming languages.
+            </p>
 
-    <h2>Our Mission</h2>
+            <p>
+                Our goal is to help beginners understand coding concepts in an easy
+                and practical way through tutorials, examples, and programming resources.
+            </p>
 
-    <p>
-        We aim to make programming simple, accessible, and enjoyable for
-        students and aspiring developers.
-    </p>
+            <h2>What We Focus On</h2>
 
-    <!-- Optional image -->
-    <img src="coding.jpg" width="400" alt="Programming Image">
+            <ul>
+                <li>Java Programming Fundamentals</li>
+                <li>Object-Oriented Programming</li>
+                <li>Learning Python and C++</li>
+                <li>Programming Practice Projects</li>
+            </ul>
 
-    <hr>
+            <h2>Our Mission</h2>
 
-    <footer>
-        <p>© 2026 Programming Hub</p>
+            <p class="highlight">
+                We aim to make programming simple, accessible, and enjoyable for students.
+            </p>
+
+        </div>
+
+        <div class="sidebar">
+
+            <img src="coding.jpg" alt="Programming Image">
+
+            <p>
+                Programming helps you build apps, websites, and solve real-world problems.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Programming Hub | Learn. Code. Create.</p>
     </footer>
 
 </body>
