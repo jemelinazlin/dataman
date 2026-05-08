@@ -53,55 +53,28 @@
         /* Banner */
         .banner {
             height: 150px;
-            background: linear-gradient(to right, brown, black);
+            background-color: brown;
             margin: 10px;
-            border-radius: 10px;
         }
 
         /* Layout */
         .row {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .content {
-            background-color: white;
-            padding: 20px;
-            width: 60%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        .sidebar {
-            background-color: white;
-            padding: 20px;
-            width: 30%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
             text-align: center;
+            padding: 20px;
         }
 
         .sidebar img {
-            width: 100%;
-            border-radius: 10px;
+            width: 300px;
         }
 
-        /* Programming cards */
+        /* Programming section */
         .card {
-            background-color: white;
-            margin: 20px auto;
-            width: 70%;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
             text-align: center;
+            margin-top: 20px;
         }
 
         .card img {
             width: 150px;
-            margin-bottom: 10px;
         }
 
         /* Highlight */
@@ -118,6 +91,18 @@
             padding: 15px;
             margin-top: 20px;
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
     </style>
 
 </head>
@@ -152,15 +137,11 @@
 
     <div class="row">
 
-        <div class="content">
-
-            <p class="highlight">
-                Java is one of the most powerful and widely used programming languages.
-                It is used in web development, mobile apps, desktop software,
-                and enterprise systems.
-            </p>
-
-        </div>
+        <p class="highlight">
+            Java is one of the most powerful and widely used programming languages.
+            It is used in web development, mobile apps, desktop software,
+            and enterprise systems.
+        </p>
 
         <div class="sidebar">
             <img src="coding.jpg" alt="Programming Image">
@@ -172,19 +153,49 @@
 
     <!-- Language Cards -->
     <div class="card">
-        <img src="java.png" alt="Java Logo">
+        <img src="/images/java.jpg" alt="Java Logo">
         <p>Java is object-oriented, secure, portable and beginner friendly.</p>
     </div>
 
     <div class="card">
-        <img src="python.png" alt="Python Logo">
+        <img src="/images/python.jpg" alt="Python Logo">
         <p>Python is popular for data science, automation and web development.</p>
     </div>
 
     <div class="card">
-        <img src="cpp.png" alt="C++ Logo">
+        <img src="/images/cpp.jpg" alt="C++ Logo">
         <p>C++ is powerful for systems programming and high-performance software.</p>
     </div>
+
+    <hr>
+
+    <h2>Quick Language Comparison</h2>
+
+    <table>
+        <tr>
+            <th>Language</th>
+            <th>Use</th>
+            <th>Difficulty</th>
+        </tr>
+
+        <tr>
+            <td>Java</td>
+            <td>Apps, Systems</td>
+            <td>Medium</td>
+        </tr>
+
+        <tr>
+            <td>Python</td>
+            <td>AI, Web, Automation</td>
+            <td>Easy</td>
+        </tr>
+
+        <tr>
+            <td>C++</td>
+            <td>Games, Systems</td>
+            <td>Hard</td>
+        </tr>
+    </table>
 
     <hr>
 

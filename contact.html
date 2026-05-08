@@ -4,19 +4,23 @@
     <title>Contact Us</title>
 
     <style>
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             background-color: #f4f4f4;
         }
 
-        /* Header style */
+        /* Header */
         h1 {
             color: brown;
-            font-size: 20px;
-            font-style: italic;
             text-align: center;
             margin-top: 20px;
+            font-style: italic;
+        }
+
+        h2 {
+            text-align: center;
         }
 
         p {
@@ -46,14 +50,15 @@
             margin: 20px;
         }
 
-        /* Form styling */
+        /* Form */
         form {
-            background-color: white;
-            width: 400px;
+            width: 350px;
             margin: auto;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-weight: bold;
         }
 
         input, textarea {
@@ -61,18 +66,16 @@
             padding: 8px;
             margin-top: 5px;
             margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            border: 1px solid gray;
         }
 
         button {
             background-color: brown;
             color: white;
-            padding: 10px;
             border: none;
+            padding: 10px;
             width: 100%;
             cursor: pointer;
-            border-radius: 5px;
         }
 
         button:hover {
@@ -85,22 +88,26 @@
             margin-top: 20px;
         }
 
+        /* Image */
         img {
             display: block;
             margin: 20px auto;
-            border-radius: 10px;
+            width: 320px;
         }
 
+        /* Footer */
         footer {
-            text-align: center;
             background-color: #333;
             color: white;
-            padding: 10px;
+            text-align: center;
+            padding: 12px;
             margin-top: 20px;
         }
+
     </style>
 
 </head>
+
 <body>
 
     <!-- Navigation -->
@@ -113,28 +120,38 @@
         <a href="contact.html">Contact</a>
     </nav>
 
+    <!-- Header -->
     <h1>Contact Programming Hub</h1>
 
     <p>
-        Have questions about Java, programming tutorials, or coding resources?
+        Have questions about programming tutorials or coding resources?
         Send us a message below.
     </p>
 
     <hr>
 
-    <!-- Form -->
+    <!-- Contact Form -->
     <form>
 
-        <label>Name:</label>
-        <input type="text" name="name">
+        <label>Full Name</label>
+        <input type="text">
 
-        <label>Email:</label>
-        <input type="email" name="email">
+        <label>Email Address</label>
+        <input type="email">
 
-        <label>Programming Topic:</label>
-        <input type="text" name="topic">
+        <label>Website URL</label>
+        <input type="url">
 
-        <label>Your Message:</label>
+        <label>Select Date</label>
+        <input type="date">
+
+        <label>Upload File</label>
+        <input type="file">
+
+        <label>Programming Topic</label>
+        <input type="text">
+
+        <label>Your Message</label>
         <textarea rows="5"></textarea>
 
         <button type="submit">Send Message</button>
@@ -143,17 +160,21 @@
 
     <!-- Contact Info -->
     <div class="contact-info">
+
         <h2>Other Ways to Reach Us</h2>
+
         <p>Email: support@programminghub.com</p>
+
         <p>Phone: +254 700 123 456</p>
+
     </div>
 
     <!-- Image -->
-    <img src="contact-coding.jpg" width="350" alt="Coding Support">
+    <img src="contact-coding.jpg" alt="Coding Support">
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Programming Hub</p>
+        <p>© 2026 Programming Hub | Learn. Code. Create.</p>
     </footer>
 
 </body>
