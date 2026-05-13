@@ -11,24 +11,6 @@
             background-color: #f4f4f4;
         }
 
-        /* Header */
-        h1 {
-            color: brown;
-            text-align: center;
-            margin-top: 20px;
-            font-style: italic;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        p {
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        /* Navigation */
         nav {
             background-color: #333;
             padding: 15px;
@@ -46,35 +28,47 @@
             color: aqua;
         }
 
-        hr {
-            margin: 20px;
+        h1 {
+            color: brown;
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
         }
 
-        /* Form */
+        p {
+            text-align: center;
+        }
+
         form {
-            width: 350px;
+            width: 400px;
             margin: auto;
+            background-color: white;
             padding: 20px;
+            border-radius: 10px;
         }
 
         label {
             font-weight: bold;
         }
 
-        input, textarea {
+        input,
+        textarea {
             width: 100%;
-            padding: 8px;
+            padding: 10px;
             margin-top: 5px;
             margin-bottom: 15px;
             border: 1px solid gray;
+            border-radius: 5px;
+            box-sizing: border-box;
         }
 
         button {
             background-color: brown;
             color: white;
             border: none;
-            padding: 10px;
+            padding: 12px;
             width: 100%;
+            border-radius: 5px;
             cursor: pointer;
         }
 
@@ -82,20 +76,11 @@
             background-color: darkred;
         }
 
-        /* Contact info */
         .contact-info {
             text-align: center;
             margin-top: 20px;
         }
 
-        /* Image */
-        img {
-            display: block;
-            margin: 20px auto;
-            width: 320px;
-        }
-
-        /* Footer */
         footer {
             background-color: #333;
             color: white;
@@ -105,7 +90,6 @@
         }
 
     </style>
-
 </head>
 
 <body>
@@ -120,41 +104,30 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Header -->
+    <!-- Heading -->
     <h1>Contact Programming Hub</h1>
 
-    <p>
-        Have questions about programming tutorials or coding resources?
-        Send us a message below.
-    </p>
+    <p>Send us your message below.</p>
 
-    <hr>
-
-    <!-- Contact Form -->
+    <!-- Form -->
     <form>
 
         <label>Full Name</label>
-        <input type="text">
+        <input type="text" placeholder="Enter full name">
 
         <label>Email Address</label>
-        <input type="email">
+        <input type="email" placeholder="Enter email address">
 
-        <label>Website URL</label>
-        <input type="url">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number">
 
-        <label>Select Date</label>
-        <input type="date">
+        <label>Subject Line</label>
+        <input type="text" placeholder="Enter subject">
 
-        <label>Upload File</label>
-        <input type="file">
+        <label>Message</label>
+        <textarea rows="5" placeholder="Write your message"></textarea>
 
-        <label>Programming Topic</label>
-        <input type="text">
-
-        <label>Your Message</label>
-        <textarea rows="5"></textarea>
-
-        <button type="submit">Send Message</button>
+        <button type="reset">Send Message</button>
 
     </form>
 
@@ -168,9 +141,6 @@
         <p>Phone: +254 700 123 456</p>
 
     </div>
-
-    <!-- Image -->
-    <img src="contact-coding.jpg" alt="Coding Support">
 
     <!-- Footer -->
     <footer>
